@@ -27,7 +27,7 @@ async function main() {
   
   await browser.close();    
 
-  Twitter.post('statuses/update', { status: 'timestamp - ${datetime} level - ${level}' }, function(err, data, response) {
+  Twitter.post('statuses/update', { status: `timestamp - ${datetime} level - ${level}` }, function(err, data, response) {
     console.log(data)
   }) 
 }
